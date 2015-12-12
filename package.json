@@ -1,0 +1,26 @@
+{
+  "name": "AgendaTelefonicaOO",
+  "version": "0.0.1",
+  "description": "Segundo trabalho da disciplina(QXD0129) de POO usando JS",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://brunomateus@bitbucket.org/brunomateus/disciplinas-poo-js-agendatelefonica.git"
+  },
+  "keywords": [
+    "js",
+    "poo",
+    "nodejs"
+  ],
+  "author": "Bruno Góis Mateus",
+  "license": "MIT License",
+  "dependencies": {
+    "expect.js": "~0.3.1",
+    "mocha": "~2.3.3"
+  }
+}

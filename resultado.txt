@@ -1,0 +1,64 @@
+
+> AgendaTelefonicaOO@0.0.1 test C:\Users\YGORREIS\Documents\agendatelefonica
+> mocha
+
+
+
+  E possivel realizar o backup da agenda
+    1) "before each" hook for "E possivel importar os contatos de uma agenda em outra"
+
+  Verificando herancas
+    √ Toda Agenda deve ser uma AbstractAgenda
+    2) Todo Contato deve ser um AbstractContato
+
+  Dado uma agenda
+    √ A agenda deve ser resetada antes de ser utilizada
+    √ Deve ser possivel recuperar todos os contatos
+    Ao tentar adicionar um contato
+      √ o nome do contato deve ser informado
+      √ o telefone do contato deve conter numeros
+      √ o telefone e nome devem ser validos
+      √ nao deve ser permitido cadastrar telefones duplicados
+      √ deve ser possivel cadastrar telefones diferente para uma mesma pessoa
+      √ a capacidade da agenda deve ser respeitada
+    Ao buscar um numero
+      √ se o numero nao existe a agenda deve retornar null
+      √ se o numero existe, a agenda deve retorar o contato
+    Ao buscar por nome
+      √ se no nome nao constar na agenda, null deve ser retornado
+      √ se o nome constar na agenda, todos os telefones registrados nesse nome devem ser retornados
+    Ao tentar atualizar um contato
+      √ apenas contatos existente podem ser atualizados
+      √ se o contato existe, o novo nome deve ser valido
+    Ao tentar remover um contato
+      √ apenas contatos existentes podem ser removidos
+
+
+  16 passing (102ms)
+  2 failing
+
+  1) E possivel realizar o backup da agenda "before each" hook for "E possivel importar os contatos de uma agenda em outra":
+     TypeError: undefined is not a function
+      at Context.<anonymous> (C:\Users\YGORREIS\Documents\agendatelefonica\test\testaBackup.js:21:16)
+      at callFn (C:\Users\YGORREIS\Documents\agendatelefonica\node_modules\mocha\lib\runnable.js:286:21)
+      at Hook.Runnable.run (C:\Users\YGORREIS\Documents\agendatelefonica\node_modules\mocha\lib\runnable.js:279:7)
+      at next (C:\Users\YGORREIS\Documents\agendatelefonica\node_modules\mocha\lib\runner.js:297:10)
+      at Immediate._onImmediate (C:\Users\YGORREIS\Documents\agendatelefonica\node_modules\mocha\lib\runner.js:319:5)
+
+  2) Verificando herancas Todo Contato deve ser um AbstractContato:
+     Error: expected false to be truthy
+      at Assertion.assert (C:\Users\YGORREIS\Documents\agendatelefonica\node_modules\expect.js\index.js:96:13)
+      at Assertion.ok (C:\Users\YGORREIS\Documents\agendatelefonica\node_modules\expect.js\index.js:115:10)
+      at Function.<anonymous> (C:\Users\YGORREIS\Documents\agendatelefonica\node_modules\expect.js\index.js:499:17)
+      at Context.<anonymous> (C:\Users\YGORREIS\Documents\agendatelefonica\test\testeAgenda.js:20:69)
+      at callFn (C:\Users\YGORREIS\Documents\agendatelefonica\node_modules\mocha\lib\runnable.js:286:21)
+      at Test.Runnable.run (C:\Users\YGORREIS\Documents\agendatelefonica\node_modules\mocha\lib\runnable.js:279:7)
+      at Runner.runTest (C:\Users\YGORREIS\Documents\agendatelefonica\node_modules\mocha\lib\runner.js:421:10)
+      at C:\Users\YGORREIS\Documents\agendatelefonica\node_modules\mocha\lib\runner.js:528:12
+      at next (C:\Users\YGORREIS\Documents\agendatelefonica\node_modules\mocha\lib\runner.js:341:14)
+      at C:\Users\YGORREIS\Documents\agendatelefonica\node_modules\mocha\lib\runner.js:351:7
+      at next (C:\Users\YGORREIS\Documents\agendatelefonica\node_modules\mocha\lib\runner.js:283:14)
+      at Immediate._onImmediate (C:\Users\YGORREIS\Documents\agendatelefonica\node_modules\mocha\lib\runner.js:319:5)
+
+
+
