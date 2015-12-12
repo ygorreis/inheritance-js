@@ -19,3 +19,10 @@ Encapsulamento
 Herança (Sobrescrita)
 Estrutura de dados: List, ArrayList.
 Expressões Regulares(Sugestão)
+
+### Executando
+
+Clone o projeto
+Acesse a pasta do projeto com o prompt de comando do NodeJS
+Digite npm install
+Digite npm test ou npm test >> resultado.txt
